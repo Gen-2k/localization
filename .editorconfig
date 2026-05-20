@@ -1,0 +1,21 @@
+# EditorConfig: Enforces consistent coding styles across different editors and IDEs.
+# More info: https://editorconfig.org
+
+root = true
+
+# Global settings for all files
+[*]
+charset = utf-8
+indent_style = space
+indent_size = 2
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+# Specific overrides
+[*.md]
+trim_trailing_whitespace = false
+
+# Ensure JSON and YAML files also follow the 2-space standard
+[*.{json,yaml,yml}]
+indent_size = 2

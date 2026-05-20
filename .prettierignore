@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+
+# Build outputs
+dist/
+dist-ssr/
+build/
+
+# Testing coverage
+coverage/
+
+# IDE and System files
+.vscode/
+.idea/
+.DS_Store
+
+# Environment variables
+.env
+.env.*
+
+# Lockfiles and temporary files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.vite/
+.npm/
+
+# Static assets (images, etc. should not be formatted as text)
+public/
+*.svg
+*.png
+*.jpg
+*.ico

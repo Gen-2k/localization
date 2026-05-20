@@ -1,0 +1,5 @@
+{
+  // Root Configuration: Orchestrates project references for the application and build tools.
+  "files": [],
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
+}
