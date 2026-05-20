@@ -105,15 +105,7 @@ export default defineConfig([
   {
     files: ['src/**/*.{test,spec}.{ts,tsx}', 'src/test/**/*'],
     languageOptions: {
-      globals: {
-        ...globals.browser,
-        afterEach: 'readonly',
-        beforeEach: 'readonly',
-        describe: 'readonly',
-        expect: 'readonly',
-        it: 'readonly',
-        vi: 'readonly',
-      },
+      globals: { ...globals.browser, ...globals.vitest },
     },
     rules: {
       '@typescript-eslint/no-explicit-any': 'off',
