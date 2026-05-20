@@ -13,6 +13,7 @@ export default defineConfig([
 
   // Perfectionist: import + alphabetical sorting (natural order)
   perfectionist.configs['recommended-natural'],
+  { rules: { 'perfectionist/sort-objects': 'off' } },
 
   // Config files (lite)
   {

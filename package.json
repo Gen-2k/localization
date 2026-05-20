@@ -24,7 +24,9 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:ui": "vitest --ui",
+    "test:file": "vitest run",
     "coverage": "vitest run --coverage",
+    "coverage:file": "vitest run --coverage",
     "clean": "node -e \"fs.rmSync('dist',{recursive:true,force:true});fs.rmSync('.vite',{recursive:true,force:true});fs.rmSync('coverage',{recursive:true,force:true})\"",
     "nuke": "node -e \"fs.rmSync('node_modules',{recursive:true,force:true});fs.rmSync('dist',{recursive:true,force:true});fs.rmSync('.vite',{recursive:true,force:true});fs.rmSync('coverage',{recursive:true,force:true})\"",
     "prepare": "husky"
@@ -46,6 +48,7 @@
     "@tailwindcss/vite": "^4.3.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
+    "@testing-library/user-event": "^14.6.1",
     "@types/node": "^24.12.4",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
